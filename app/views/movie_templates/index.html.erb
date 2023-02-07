@@ -39,8 +39,8 @@
     </td>
     <td> <%= a_thing.title %> </td>
     <td> <%= a_thing.year %> </td>
-    <td> <% m = Movie.where({ :director_id => a_thing.director_id}).at(0) %> 
-      <%=m.title %>
+    <td> <% d = Director.where({ :id => a_thing.director_id}).at(0) %> 
+      <%= d.name %>
     </td>
     <td> 
       <a href="/movies/<%= a_thing.id %>">
