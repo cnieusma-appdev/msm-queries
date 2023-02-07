@@ -41,7 +41,7 @@
     Image
   </dt>
   <dd>
-    <%= @the_director.image %>
+    <img src="http://robohash.org/<%= @the_director.image %>" style="width:250px;">
   </dd>
 
   <dt>
@@ -62,6 +62,30 @@
 <h1> Filmography </h1>
 
 <table border="1">
+<tr>
+    <th>
+      ID
+    </th>
+
+    <th>
+      Image
+    </th>
+
+    <th>
+      Title
+    </th>
+
+    <th>
+      Year
+    </th>
+
+    <th>
+      Director
+    </th>
+
+    <th>
+    </th>
+  </tr>
 <% @filmography.each do |a_film| %>
   <tr>
     <td>
